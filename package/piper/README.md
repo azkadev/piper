@@ -18,7 +18,6 @@ or flutter
 ```bash
 dart pub add piper_flutter
 ```
- # piper
 
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">

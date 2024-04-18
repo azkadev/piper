@@ -1,24 +1,24 @@
-# Piper
+# Native Lib piper
 
-
----
-
-### Demo
-
----
-
-### Install Library
+1. Cross platform
 
 ```bash
-dart pub add piper
-```
+rm -rf build
+mkdir build
+cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+``` 
 
-or flutter
+2. Untuk Android
 
 ```bash
-dart pub add piper_flutter
+rm -rf build
+mkdir build
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=${ANDROID_SDK}/ndk/24.0.8215888/build/cmake/android.toolchain.cmake -DCMAKE_BUILD_TYPE=Release -DANDROID_ABI=arm64-v8a
+cmake --build .
 ```
- # piper
 
 <!-- START GLOBAL CORPORATION -->
 <h3 align="center">
